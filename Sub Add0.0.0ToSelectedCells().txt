@@ -1,4 +1,4 @@
-Sub Add0.0.0ToSelectedCells()
+Sub Add0_0_0ToSelectedCells()
     Dim cell As Range
 
     ' Loop through each selected cell
