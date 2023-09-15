@@ -1,0 +1,12 @@
+Sub RemoveTrailingSpace()
+    Dim cell As Range
+
+    ' Loop through each selected cell
+    For Each cell In Selection
+        ' Check if the cell is not empty and ends with a space
+        If Not IsEmpty(cell.Value) And Right(cell.Value, 1) = " " Then
+            ' Remove the trailing space
+            cell.Value = Left(cell.Value, Len(cell.Value) - 1)
+        End If
+    Next cell
+End Sub
