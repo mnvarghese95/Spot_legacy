@@ -1,0 +1,12 @@
+Sub Add0.0ToSelectedCells()
+    Dim cell As Range
+
+    ' Loop through each selected cell
+    For Each cell In Selection
+        ' Check if the cell is not empty
+        If Not IsEmpty(cell.Value) Then
+            ' Add ".0.0" to the cell's value
+            cell.Value = cell.Value & ".0.0"
+        End If
+    Next cell
+End Sub
